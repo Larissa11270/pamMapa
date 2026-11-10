@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MapaPam.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MapaPam"
+    xmlns:views="clr-namespace:MapaPam.Views.Usuarios"
+    Title="MapaPam">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Usuários"
+        ContentTemplate="{DataTemplate views:LocalizacaoView}"
+        Route="usuarios" />
+
+</Shell>
